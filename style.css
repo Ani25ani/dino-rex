@@ -1,0 +1,62 @@
+body{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(252,70,107,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.dino{
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+.dino img{
+    width: 40px;
+}
+.cactus{
+    background-size: 20px 40px;
+    position: relative;
+    top: 115px;
+    left: 580px;
+    animation: cactus_move 1.5s infinite linear;
+}
+.cactus img{
+    width: 35px;
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes cactus_move{
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+@keyframes jump {
+    0%{
+        top: 140px;
+    }
+    30%{
+        top: 120px;
+    }
+    50%{
+        top: 90px;
+    }
+    80%{
+        top: 120px;
+    }
+    100%{
+        top: 140px;
+    }
+}
